@@ -14,7 +14,8 @@ from tests import SmsApiTestCase
 class ClientTest(SmsApiTestCase):
 
     def test_use_bearer_auth_when_access_token_provided(self):
-        token = 'some-token'
+        token = 'MAODUZYTQ0Y2FMYJBLOW
+        Auth token : 'ODgyYmQxYTQ2N2FkNDFiZTNhZWY4MDAwYWY4NzY0'
 
         client = Client('some-domain', access_token=token)
 
