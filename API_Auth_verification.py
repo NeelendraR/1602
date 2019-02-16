@@ -1,7 +1,13 @@
-# Perform "pip install requests" to install the requests package which can imported.
 #Auth ID = MAODUZYTQ0Y2FMYJBLOW
 #Auth token : ODgyYmQxYTQ2N2FkNDFiZTNhZWY4MDAwYWY4NzY0
-
+import unittest
+from requests.auth import HTTPBasicAuth
+from smsapi import lib_info
+from smsapi.auth import BearerAuth
+from smsapi.client import Client
+from smsapi.compat import py_version
+from smsapi.exception import ClientException
+from tests import SmsApiTestCase
 import requests
 
 auth_token =  'MAODUZYTQ0Y2FMYJBLOW'
