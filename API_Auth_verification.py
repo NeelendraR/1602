@@ -1,4 +1,4 @@
-
+# Perform "pip install requests" to install the requests package which can imported.
 #Auth ID = MAODUZYTQ0Y2FMYJBLOW
 #Auth token : ODgyYmQxYTQ2N2FkNDFiZTNhZWY4MDAwYWY4NzY0
 
@@ -10,7 +10,7 @@ auth_token =  'MAODUZYTQ0Y2FMYJBLOW'
 from abc.rest import Client
 
 # Your Account Sid and Auth Token from abc.com/user/account
-account_sid = "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+account_sid = "ODgyYmQxYTQ2N2FkNDFiZTNhZWY4MDAwYWY4NzY0"
 
 client = Client(account_sid, auth_token)
 
@@ -51,6 +51,5 @@ country = client.pricing \
                 .countries("EE") \
                 .fetch()
 
-
-
-C:\Users\ranjan3\Desktop\Automation_learning\TestCase\API_Auth_verification.py
+for p in country.phone_number_prices:
+    print("{}{}".format(p['type'], p['current_price']))
